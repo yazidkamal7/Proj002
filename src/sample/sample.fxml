@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" layoutX="37.0" layoutY="21.0" prefHeight="123.0" prefWidth="532.0" style="-fx-border-color: #fca311; -fx-border-radius: 6px;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="69.0" prefWidth="532.0" spacing="20.0">
+               <children>
+                  <Label text="File path" />
+                  <TextField fx:id="pathField" prefHeight="25.0" prefWidth="291.0" />
+                  <Button fx:id="browse" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" text="Select file" />
+               </children>
+            </HBox>
+            <Button fx:id="compress" mnemonicParsing="false" text="Compress">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="136.0" layoutY="166.0" prefHeight="69.0" prefWidth="310.0" spacing="30.0">
+         <children>
+            <Label text="Huffman" textFill="#14213d">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="85.0" text="Header" />
+            <Button layoutX="84.0" layoutY="27.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="85.0" text="Statics" />
+         </children></HBox>
+      <VBox alignment="CENTER" layoutX="37.0" layoutY="250.0" prefHeight="123.0" prefWidth="532.0" style="-fx-border-color: #fca311; -fx-border-radius: 6px;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="69.0" prefWidth="532.0" spacing="20.0">
+               <children>
+                  <Label text="File path" />
+                  <TextField fx:id="pathField2" prefHeight="25.0" prefWidth="291.0" />
+                  <Button fx:id="browse2" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" text="Select file" />
+               </children>
+            </HBox>
+            <Button fx:id="decompress" mnemonicParsing="false" text="Decompress">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
